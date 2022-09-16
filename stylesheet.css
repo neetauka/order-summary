@@ -51,10 +51,12 @@
     color:var(--Dark-blue);
     padding-bottom: 20px;
  }
- p{
+ p#para{
     text-align: center;
     font-family:'RedHatDisplay Medium', 'sans serif' ;
     color:var(--Desaturated-blue);
+    font-size: 19px;
+    padding-bottom:10px;
  }
  
 
@@ -83,6 +85,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: inherit; 
+    background-color: var(--Pale-blue);
 }
 
 .container{
@@ -96,19 +99,86 @@ body{
     background-color: var(--Very-pale-blue);
     width:90vw;
     max-width:380px;
-    height:380px;
+    /* height:380px; */
     box-sizing: border-box;
-    padding:30px;
+    padding:30px 30px 20px 30px ;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 img{
     object-fit: cover;
-    width: 380px;
+    max-width: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.middle{
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color:  hsla(225, 100%, 94%, 0.368);
+border-radius: 15px;
+box-sizing: border-box;
+padding: 15px;
+margin:20px 0px;
+width: 100%;
+}
+#icon{
+    width:50px;
+}
+p#plan{
+    /* color:var(--Bright-blue); */
+    font-family:'RedHatDisplay Black';
+}
+span{
+    font-family:'RedHatDisplay Medium', 'sans serif' ;
+    color:var(--Desaturated-blue);
+}
+a{
+    font-family:'RedHatDisplay Bold', 'sans serif' ;
+    color:var(--Bright-blue);
+}
+a:hover{
+    color:hsl(245, 73%, 60%); 
+    text-decoration: none;
+}
 
+button{
+    text-align: center;
+    padding:15px;
+    height:59px;
+    width:100%;
+    border-radius: 15px;
+    border:none;
+    background-color: var(--Bright-blue);
+    color:var(--Very-pale-blue);
+    font-family:'RedHatDisplay Bold', 'sans serif' ;
+    font-size: var(--paragraph);
+    box-shadow:1px 20px 11px 1px hsl(225, 96%, 91%);
+    margin:10px 0px;
+}
+button:hover{
+    background-color:hsl(245, 73%, 60%); 
+    cursor: pointer;
+}
+    
+p#cancel-text{
+    text-align: center;
+    padding-top:18px;
+    font-family:'RedHatDisplay Bold', 'sans serif' ;
+    color:var(--Desaturated-blue);
+}
+p#cancel-text:hover{
+    color:var(--Dark-blue);
+    cursor: pointer;
+}
+@media only screen and (min-width){
+    body{
+        background-image: url('images/pattern-background-desktop.svg') !important;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: inherit; 
+    }
+} 
 
 
 
