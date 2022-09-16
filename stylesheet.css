@@ -179,13 +179,13 @@ p#cancel-text:hover{
         background-attachment: inherit; 
 
     }
-    p#para{
-        text-align: center;
-        font-family:'RedHatDisplay Medium', 'sans serif' ;
-        color:var(--Desaturated-blue);
-        font-size: 16px;
-        padding-bottom:10px;
-     }
+
+     img{
+        object-fit: cover;
+        max-width: 380px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 } 
 
 
