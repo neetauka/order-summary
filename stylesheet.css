@@ -55,7 +55,7 @@
     text-align: center;
     font-family:'RedHatDisplay Medium', 'sans serif' ;
     color:var(--Desaturated-blue);
-    font-size: 19px;
+    font-size: 16px;
     padding-bottom:10px;
  }
  
@@ -107,7 +107,7 @@ body{
 }
 img{
     object-fit: cover;
-    max-width: 380px;
+    max-width: 340px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -171,13 +171,21 @@ p#cancel-text:hover{
     color:var(--Dark-blue);
     cursor: pointer;
 }
-@media only screen and (min-width){
+@media only screen and (min-width:576px){
     body{
         background-image: url('images/pattern-background-desktop.svg') !important;
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: inherit; 
+
     }
+    p#para{
+        text-align: center;
+        font-family:'RedHatDisplay Medium', 'sans serif' ;
+        color:var(--Desaturated-blue);
+        font-size: 16px;
+        padding-bottom:10px;
+     }
 } 
 
 
